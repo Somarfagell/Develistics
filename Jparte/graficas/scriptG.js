@@ -96,62 +96,67 @@ function setearGraficas(valores){
     );
 
   //Mis datos
-  const myLineChart = new Chart(line,{
-    type: 'line',
-      data:{ //objeto data
-        labels: [ // Labels de la parte de abajo
-          myStatistics[0][0].toLowerCase(),
-          myStatistics[1][0].toLowerCase(),
-          myStatistics[2][0].toLowerCase(),
-          myStatistics[3][0].toLowerCase(),
-          myStatistics[4][0].toLowerCase()
-        ],
-        datasets: [{
-          label: 'Mis estadísticas (%)',
-          backgroundColor: 'rgb(60, 141, 173)',
-          borderColor: 'rgb(18, 93, 152)',
-          data: [misPorc[0],misPorc[1],misPorc[2],misPorc[3],misPorc[4]],
-        }]
-      },
-      options: {
-        responsive: true
-      }
-    }
-  );
+  if(misPorc){
 
-  //mis mejores campos
-  const graficaBar = new Chart(barra,{
-    type: 'bar',
-    data:{
-        labels: [myStatistics[0][0], myStatistics[1][0], myStatistics[2][0] ],
-        datasets: [{
-          label: 'valor(%) ',
-          data: [myStatistics[0][1],myStatistics[1][1],myStatistics[2][1]],
-          backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(255, 159, 64, 0.2)',
-            'rgba(255, 205, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(201, 203, 207, 0.2)'
+    const myLineChart = new Chart(line,{
+      type: 'line',
+        data:{ //objeto data
+          labels: [ // Labels de la parte de abajo
+            myStatistics[0][0].toLowerCase(),
+            myStatistics[1][0].toLowerCase(),
+            myStatistics[2][0].toLowerCase(),
+            myStatistics[3][0].toLowerCase(),
+            myStatistics[4][0].toLowerCase()
           ],
-          borderColor: [
-            'rgb(255, 99, 132)',
-            'rgb(255, 159, 64)',
-            'rgb(255, 205, 86)',
-            'rgb(75, 192, 192)',
-            'rgb(54, 162, 235)',
-            'rgb(153, 102, 255)',
-            'rgb(201, 203, 207)'
-          ],
-          borderWidth: 1
-        }]
-    }
-    } 
+          datasets: [{
+            label: 'Mis estadísticas (%)',
+            backgroundColor: 'rgb(60, 141, 173)',
+            borderColor: 'rgb(18, 93, 152)',
+            data: [misPorc[0],misPorc[1],misPorc[2],misPorc[3],misPorc[4]],
+          }]
+        },
+        options: {
+          responsive: true
+        }
+      }
     );
   
- 
+    //mis mejores campos
+    const graficaBar = new Chart(barra,{
+      type: 'bar',
+      data:{
+          labels: [myStatistics[0][0], myStatistics[1][0], myStatistics[2][0] ],
+          datasets: [{
+            label: 'valor(%) ',
+            data: [myStatistics[0][1],myStatistics[1][1],myStatistics[2][1]],
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.2)',
+              'rgba(255, 159, 64, 0.2)',
+              'rgba(255, 205, 86, 0.2)',
+              'rgba(75, 192, 192, 0.2)',
+              'rgba(54, 162, 235, 0.2)',
+              'rgba(153, 102, 255, 0.2)',
+              'rgba(201, 203, 207, 0.2)'
+            ],
+            borderColor: [
+              'rgb(255, 99, 132)',
+              'rgb(255, 159, 64)',
+              'rgb(255, 205, 86)',
+              'rgb(75, 192, 192)',
+              'rgb(54, 162, 235)',
+              'rgb(153, 102, 255)',
+              'rgb(201, 203, 207)'
+            ],
+            borderWidth: 1
+          }]
+      }
+      } 
+      );
+  }
+  else{
+    alert("Para recibir datos personalizados porfavor realice el test");
+  }
+  
 }
 
 
