@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Develastics Estadísticas</title>
+    <link rel = "icon" href =  "https://img2.freepng.es/20180626/rlk/kisspng-bar-chart-statistics-computer-icons-clip-art-business-statistics-5b32ed42569974.0469936915300641943547.jpg">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styleG.css">
+    
+</head>
+<body>
+
+  <div class="graficas">
+
+    <h2>Mis estadísticas</h2>
+    <div class="id_caja">
+      <canvas id="myLineChart" width="600" height="600"></canvas>
+    </div>
+
+    <div class="id_caja">
+      <canvas id="myBarChart" width="600" height="600"></canvas>
+    </div>
+
+    <h2>Estadísticas alrededor del mundo</h2>
+    <div class="id_caja">
+      <canvas id="miDoughnutChart" width="600" height="600"></canvas>
+    </div>
+
+    <div class="id_caja">
+      <canvas id="myRadarChart" width="600" height="600"></canvas>
+    </div>
+
+  </div>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBaxV8EkuiUmLFTljIdimRLBpFlnSokUOs",
+      authDomain: "proba-firebase-16af1.firebaseapp.com",
+      projectId: "proba-firebase-16af1",
+      storageBucket: "proba-firebase-16af1.appspot.com",
+      messagingSenderId: "198468061228",
+      appId: "1:198468061228:web:2a794a777078dc6eb9a989"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="scriptG.js" defer></script>
+</body>
+</html>

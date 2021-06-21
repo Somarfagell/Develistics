@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body{
+  background-color: rgb(209,196,233);
+  justify-content: center;
+  text-align:left;
+}
+
+
+.pregunta{
+  background-color: white;
+  width: 60%;  
+  height: fit-content;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  font-family: 'Noto Sans', sans-serif;
+  justify-content:flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+}
+
+.pregunta:hover{
+  border-left: 1rem solid #A7C4BC;
+  transition: boder-left 1s;
+}
+
+label{
+  margin-left: 1rem;
+}
+
+input{
+  -webkit-appearance: none;
+  border-radius: 30%;
+  border: 0.2em solid #A7C4BC;
+  width: 1rem;
+  height: 1rem;
+}
+
+input:checked{
+  background-image: url("https://icons-for-free.com/iconfiles/png/512/check+complete+correct+ok+right+yes+icon-1320085936720923271.png");
+  background-size: contain;
+  border: none;
+}
+
+.opciones{
+  width: 100%;
+}
+
+.titulo{
+  width: 60%;
+  background-color: white;
+  border-top: 1rem solid rgb(103,58,183);
+  font-family: 'Noto Sans', sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titulo h2{
+  font-weight: bold;
+}
+
+.subrayado{
+  color: red;
+}
+
+.botonEnviar{
+  width: 5rem;
+  margin-left: 20%;
+  height: 2.5rem;
+  border-radius: 0.2rem;
+  border-color: 0;
+  background-color: rgb(115,73,189);
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+}
+
+
+
+
+
+

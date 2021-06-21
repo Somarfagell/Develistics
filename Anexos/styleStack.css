@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+:root {
+    --Esquinas: 1rem;
+    --AnchoMargen: 0.15rem;
+    --Espaciado: 1rem;
+    --EsquinaBoton: 0.3rem;
+    --Fuente: 'Mate SC', serif;
+    --radioBurbuja: 3rem;
+    --MargenBurbuja: 0.2rem;
+    
+    --colorHover: #8675A9;
+    --colorBotones: purple;
+    --colorCodigo: #bf80fa; 
+}
+
+*{
+    margin: 0;
+    /* padding: 0.3rem; */
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../Index/imagenes/azul.jpg");
+    background-size: 100%;
+    font-family: var(--Fuente);
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+/*header*/
+header{
+    margin: 0;
+    padding: 2rem;
+}
+
+.tope{
+    width: 100%;    
+    display: flex;
+    background-color: rgba(0,0,0,0.6);
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.2fr;
+    color: azure;
+}
+
+.tope a{
+    text-decoration: none;
+    color: antiquewhite;
+    margin: 0.5em;
+    padding: 1em;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav p:hover{
+    background:var(--colorHover);
+    padding: 4px 20px;
+    border-radius: 7px;
+    color: azure;
+}
+/*fin header*/
+
+
+
+#tope{
+    margin-bottom: var(--Espaciado);
+    width: 100%;
+}
+
+
+#cajaLateral{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 7rem;
+    padding: 1rem;
+    background-color: var(--colorCodigo);
+    border-radius: var(--Esquinas);
+    display: flex;
+    justify-content: center;
+}
+
+
+#titulo{
+    width: 100%;
+}
+
+
+
+.codigoCompleto{
+   
+    border-radius: 1rem;
+    margin:auto;
+    margin-top: 2rem;
+    width: 45rem;
+    padding: 1rem;
+}
+#imagen{
+    border-radius: 7px;
+    
+}
+#info{
+    width: 34rem;
+    background-color: #ac8af3;
+}
+#info p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+
+

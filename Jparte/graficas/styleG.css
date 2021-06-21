@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body{
+  background-color: rgb(209,196,233);
+  justify-content: center;
+  text-align:center;
+}
+
+.id_caja{
+  width: 40%;
+  margin: 0.5rem;
+}
+
+.graficas{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+h2{
+  width: 100%;
+  font-family: 'Noto Sans', sans-serif;
+  margin: auto;
+}
+
+
+
